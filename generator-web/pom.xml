@@ -68,8 +68,8 @@
 				<configuration>
 					<skip>true</skip>
 					<compilerId>javac</compilerId>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>11</source>
+					<target>11</target>
 					<encoding>UTF-8</encoding>
 					<compilerVersion>1.8</compilerVersion>
 					<verbose>true</verbose>
