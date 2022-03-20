@@ -3,27 +3,37 @@
   "templates": [{
     "id": "10",
     "name": "swagger-ui",
-    "description": "swagger-ui"
+    "description": "swagger-ui",
+    "fileNamePattern": "{resourceName}-swagger-ui.html",
+    "fileSubPath": "ui"
   },
     {
       "id": "11",
       "name": "element-ui",
-      "description": "element-ui"
+      "description": "element-ui",
+      "fileNamePattern": "{resourceName}-element-ui.html",
+      "fileSubPath": "ui"
     },
     {
       "id": "12",
       "name": "bootstrap-ui",
-      "description": "bootstrap-ui"
+      "description": "bootstrap-ui",
+      "fileNamePattern": "{resourceName}-bootstrap-ui.html",
+      "fileSubPath": "ui"
     },
     {
       "id": "13",
       "name": "layui-edit",
-      "description": "layui-edit"
+      "description": "layui-edit",
+      "fileNamePattern": "{resourceName}-layui-edit-ui.html",
+      "fileSubPath": "ui"
     },
     {
       "id": "14",
       "name": "layui-list",
-      "description": "layui-list"
+      "description": "layui-list",
+      "fileNamePattern": "{resourceName}-layui-list-ui.html",
+      "fileSubPath": "ui"
     }
   ]
 },
@@ -247,6 +257,67 @@
         "id": "103",
         "name": "starp-jpa-controller",
         "description": "jpacontroller"
+      }
+    ]
+  },
+  {
+    "group": "mybatis-plus-crud",
+    "templates": [
+      {
+        "id": "104",
+        "name": "pluscrudapi",
+        "description": "pluscrudapi",
+        "fileExporterClass": "com.softdev.system.generator.exporter.PlusCrudApiFileExporter",
+        "fileNamePattern": "{resourceName}Api.java",
+        "fileSubPath": "api"
+      },
+      {
+        "id": "105",
+        "name": "pluscrudcontroller",
+        "description": "pluscrudcontroller",
+        "fileExporterClass": "com.softdev.system.generator.exporter.PlusCrudControllerFileExporter",
+        "fileNamePattern": "{resourceName}Controller.java",
+        "fileSubPath": "controller"
+      },
+      {
+        "id": "106",
+        "name": "pluscrudservice",
+        "description": "pluscrudservice",
+        "fileExporterClass": "com.softdev.system.generator.exporter.PlusCrudServiceFileExporter",
+        "fileNamePattern": "{resourceName}Service.java",
+        "fileSubPath": "service"
+      },
+      {
+        "id": "107",
+        "name": "pluscrudmapper",
+        "description": "pluscrudmapper",
+        "fileExporterClass": "com.softdev.system.generator.exporter.PlusCrudMapperFileExporter",
+        "fileNamePattern": "{resourceName}Mapper.java",
+        "fileSubPath": "mapper"
+      },
+      {
+        "id": "108",
+        "name": "pluscrudentity",
+        "description": "pluscrudentity",
+        "fileExporterClass": "com.softdev.system.generator.exporter.PlusCrudEntityFileExporter",
+        "fileNamePattern": "{resourceName}.java",
+        "fileSubPath": "domain"
+      },
+      {
+        "id": "109",
+        "name": "pluscrudconverter",
+        "description": "pluscrudconverter",
+        "fileExporterClass": "com.softdev.system.generator.exporter.PlusCrudConverterFileExporter",
+        "fileNamePattern": "{resourceName}Converter.java",
+        "fileSubPath": "converter"
+      },
+      {
+        "id": "110",
+        "name": "pluscruddto",
+        "description": "pluscruddto",
+        "fileExporterClass": "com.softdev.system.generator.exporter.PlusCrudDtoFileExporter",
+        "fileNamePattern": "{resourceName}Dto.java",
+        "fileSubPath": "dto"
       }
     ]
   }

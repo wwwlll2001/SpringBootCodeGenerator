@@ -1,5 +1,9 @@
 package com.softdev.system.generator.util;
 
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * string tool
  *
@@ -54,11 +58,21 @@ public class StringUtils {
         }
         return result.toString();
     }
-    public static boolean isNotNull(String str){
+
+    public static boolean isNotNull(String str) {
         return org.apache.commons.lang3.StringUtils.isNotEmpty(str);
     }
-    public static void main(String[] args) {
 
+    public static String renderTemplateString(String template, Map<String, Object> params) {
+        Pattern templatePattern = Pattern.compile("\\{(\\w+)\\}");
+        StringBuffer sb = new StringBuffer();
+        Matcher matcher = templatePattern.matcher(template);
+        while (matcher.find()) {
+            String key = matcher.group(1);
+            Object value = params.get(key);
+            matcher.appendReplacement(sb, (value != null) ? Matcher.quoteReplacement(value.toString()) : " ");
+        }
+        matcher.appendTail(sb);
+        return sb.toString();
     }
-
 }

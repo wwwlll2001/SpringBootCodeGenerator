@@ -1,8 +1,8 @@
 package com.softdev.system.generator.service;
 
 import freemarker.template.TemplateException;
-import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Map;
 
@@ -15,6 +15,9 @@ public interface GeneratorService {
 
     String getTemplateConfig() throws IOException;
 
-    public Map<String, String> getResultByParams(Map<String, Object> params) throws IOException, TemplateException;
+    Map<String, String> getResultByParams(Map<String, Object> params) throws IOException, TemplateException;
+
+    void export(Map<String, Object> params, HttpServletResponse httpServletResponse)
+            throws IOException, TemplateException;
 
 }
