@@ -19,5 +19,4 @@ public interface GeneratorService {
 
     void export(Map<String, Object> params, HttpServletResponse httpServletResponse)
             throws IOException, TemplateException;
-
 }

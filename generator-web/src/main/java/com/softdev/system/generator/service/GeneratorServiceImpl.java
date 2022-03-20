@@ -42,14 +42,10 @@ public class GeneratorServiceImpl implements GeneratorService {
     @Override
     public String getTemplateConfig() throws IOException {
         templateCpnfig = null;
-        if (templateCpnfig != null) {
-        } else {
-            InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("template.json");
-            templateCpnfig = new BufferedReader(new InputStreamReader(inputStream))
-                    .lines().collect(Collectors.joining(System.lineSeparator()));
-            inputStream.close();
-        }
-        //log.info(JSON.toJSONString(templateCpnfig));
+        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("template.json");
+        templateCpnfig = new BufferedReader(new InputStreamReader(inputStream))
+                .lines().collect(Collectors.joining(System.lineSeparator()));
+        inputStream.close();
         return templateCpnfig;
     }
 
@@ -73,7 +69,7 @@ public class GeneratorServiceImpl implements GeneratorService {
                 String templateName = childTemplate.getString("name");
 
                 result.put(templateName, generatedCode);
-//                exportFile(params, childTemplate, generatedCode);
+                exportFile(params, childTemplate, generatedCode);
             }
         }
         return result;
