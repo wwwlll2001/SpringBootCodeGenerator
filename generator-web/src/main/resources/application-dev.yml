@@ -55,6 +55,7 @@ OEM:
   description: SpringBootCodeGenerator(JAVA代码生成平台)，又名`大狼狗代码生成器`、`SQL转JAVA`、`SQL转JPA`、`SQL转Mybatis`、`Mybatis在线生成器`、`SQL转Java JPA、MYBATIS实现类代码生成平台`。
   author: zhengkai.blog.csdn.net
   packageName: com.software.system
+  restResourceName: userinfos
   copyright: powered by Moshow郑锴(大狼狗)
   returnUtilSuccess: ReturnT.success
   returnUtilFailure: ReturnT.error

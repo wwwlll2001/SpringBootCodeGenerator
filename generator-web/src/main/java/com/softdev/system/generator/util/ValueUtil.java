@@ -38,6 +38,9 @@ public class ValueUtil {
     @Value("${OEM.packageName}")
     public String packageName;
 
+    @Value("${OEM.restResourceName}")
+    public String restResourceName;
+
     @Value("${OEM.returnUtilSuccess}")
     public String returnUtilSuccess;
 
