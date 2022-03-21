@@ -42,221 +42,301 @@
     "templates": [{
       "id": "20",
       "name": "controller",
-      "description": "controller"
+      "description": "controller",
+      "fileNamePattern": "{resourceName}Controller.java",
+      "fileSubPath": ""
     },
       {
         "id": "21",
         "name": "service",
-        "description": "service"
+        "description": "service",
+        "fileNamePattern": "{resourceName}Service.java",
+        "fileSubPath": ""
       },
       {
         "id": "22",
         "name": "service_impl",
-        "description": "service_impl"
+        "description": "service_impl",
+        "fileNamePattern": "{resourceName}ServiceImpl.java",
+        "fileSubPath": ""
       },
       {
         "id": "23",
         "name": "mapper",
-        "description": "mapper"
+        "description": "mapper",
+        "fileNamePattern": "{resourceName}Mapper.java",
+        "fileSubPath": ""
       },
       {
         "id": "24",
         "name": "mybatis",
-        "description": "mybatis"
+        "description": "mybatis",
+        "fileNamePattern": "{resourceName}Mybatis.xml",
+        "fileSubPath": ""
       },
       {
         "id": "25",
         "name": "model",
-        "description": "model"
+        "description": "model",
+        "fileNamePattern": "{resourceName}.java",
+        "fileSubPath": ""
       },
       {
         "id": "26",
         "name": "mapper2",
-        "description": "mapper annotation"
+        "description": "mapper annotation",
+        "fileNamePattern": "{resourceName}Mapper2.java",
+        "fileSubPath": ""
       }
     ]
   },
   {
     "group": "jpa",
-    "templates": [{
-      "id": "30",
-      "name": "entity",
-      "description": "entity"
-    },
+    "templates": [
+      {
+        "id": "30",
+        "name": "entity",
+        "description": "entity",
+        "fileNamePattern": "{resourceName}.java",
+        "fileSubPath": ""
+      },
       {
         "id": "31",
         "name": "repository",
-        "description": "repository"
+        "description": "repository",
+        "fileNamePattern": "{resourceName}Repository.java",
+        "fileSubPath": ""
       },
       {
         "id": "32",
         "name": "jpacontroller",
-        "description": "jpacontroller"
+        "description": "jpacontroller",
+        "fileNamePattern": "{resourceName}Controller.java",
+        "fileSubPath": ""
       }
     ]
   },
 
   {
     "group": "jdbc-template",
-    "templates": [{
-      "id": "40",
-      "name": "jtdao",
-      "description": "jtdao"
-    },
+    "templates": [
+      {
+        "id": "40",
+        "name": "jtdao",
+        "description": "jtdao",
+        "fileNamePattern": "{resourceName}DAO.java",
+        "fileSubPath": ""
+      },
       {
         "id": "41",
         "name": "jtdaoimpl",
-        "description": "jtdaoimpl"
+        "description": "jtdaoimpl",
+        "fileNamePattern": "{resourceName}DAOImpl.java",
+        "fileSubPath": ""
       }
     ]
   },
 
   {
     "group": "beetlsql",
-    "templates": [{
-      "id": "50",
-      "name": "beetlmd",
-      "description": "beetlmd"
-    },
+    "templates": [
+      {
+        "id": "50",
+        "name": "beetlmd",
+        "description": "beetlmd",
+        "fileNamePattern": "{resourceName}Md",
+        "fileSubPath": ""
+      },
       {
         "id": "51",
         "name": "beetlentity",
-        "description": "beetlentity"
+        "description": "beetlentity",
+        "fileNamePattern": "{resourceName}.java",
+        "fileSubPath": ""
       },
       {
         "id": "52",
         "name": "beetlcontroller",
-        "description": "beetlcontroller"
+        "description": "beetlcontroller",
+        "fileNamePattern": "{resourceName}Controller.java",
+        "fileSubPath": ""
       }
     ]
   },
 
   {
     "group": "mybatis-plus",
-    "templates": [{
-      "id": "60",
-      "name": "pluscontroller",
-      "description": "pluscontroller"
-    },
+    "templates": [
+      {
+        "id": "60",
+        "name": "pluscontroller",
+        "description": "pluscontroller",
+        "fileNamePattern": "{resourceName}Controller.java",
+        "fileSubPath": ""
+      },
       {
         "id": "61",
         "name": "plusservice",
-        "description": "plusservice"
+        "description": "plusservice",
+        "fileNamePattern": "{resourceName}Service.java",
+        "fileSubPath": ""
       },
       {
         "id": "62",
         "name": "plusmapper",
-        "description": "plusmapper"
+        "description": "plusmapper",
+        "fileNamePattern": "{resourceName}Mapper.java",
+        "fileSubPath": ""
       },
       {
         "id": "63",
         "name": "plusentity",
-        "description": "plusentity"
+        "description": "plusentity",
+        "fileNamePattern": "{resourceName}.java",
+        "fileSubPath": ""
       }
     ]
   },
 
   {
     "group": "util",
-    "templates": [{
-      "id": "70",
-      "name": "beanutil",
-      "description": "beanutil"
-    },
+    "templates": [
+      {
+        "id": "70",
+        "name": "beanutil",
+        "description": "beanutil",
+        "fileNamePattern": "{resourceName}BeanUtil",
+        "fileSubPath": ""
+      },
       {
         "id": "71",
         "name": "json",
-        "description": "json"
+        "description": "json",
+        "fileNamePattern": "{resourceName}Json",
+        "fileSubPath": ""
       },
       {
         "id": "72",
         "name": "xml",
-        "description": "xml"
+        "description": "xml",
+        "fileNamePattern": "{resourceName}Xml",
+        "fileSubPath": ""
       },
       {
         "id": "73",
         "name": "sql",
-        "description": "sql"
+        "description": "sql",
+        "fileNamePattern": "{resourceName}Sql",
+        "fileSubPath": ""
       },
       {
         "id": "74",
         "name": "swagger-yml",
-        "description": "swagger-yml"
+        "description": "swagger-yml",
+        "fileNamePattern": "{resourceName}SwaggerYml",
+        "fileSubPath": ""
       }
     ]
   },
 
   {
     "group": "common-mapper",
-    "templates": [{
-      "id": "81",
-      "name": "tkentity",
-      "description": "tkentity"
-    },
+    "templates": [
+      {
+        "id": "81",
+        "name": "tkentity",
+        "description": "tkentity",
+        "fileNamePattern": "{resourceName}.java",
+        "fileSubPath": ""
+      },
       {
         "id": "82",
         "name": "tkmapper",
-        "description": "tkmapper"
+        "description": "tkmapper",
+        "fileNamePattern": "{resourceName}Mapper.java",
+        "fileSubPath": ""
       }
     ]
   },
 
   {
     "group": "renren-fast",
-    "templates": [{
-      "id": "91",
-      "name": "menu-sql",
-      "description": "menu-sql"
-    },
+    "templates": [
+      {
+        "id": "91",
+        "name": "menu-sql",
+        "description": "menu-sql",
+        "fileNamePattern": "{resourceName}MenuSql",
+        "fileSubPath": ""
+      },
       {
         "id": "92",
         "name": "vue-list",
-        "description": "vue-list"
+        "description": "vue-list",
+        "fileNamePattern": "{resourceName}VueList",
+        "fileSubPath": ""
       },
       {
         "id": "93",
         "name": "vue-edit",
-        "description": "vue-edit"
+        "description": "vue-edit",
+        "fileNamePattern": "{resourceName}VueEdit",
+        "fileSubPath": ""
       },
       {
         "id": "94",
         "name": "rr-controller",
-        "description": "rr-controller"
+        "description": "rr-controller",
+        "fileNamePattern": "{resourceName}Controller.java",
+        "fileSubPath": ""
       },
       {
         "id": "95",
         "name": "rr-dao",
-        "description": "rr-dao"
+        "description": "rr-dao",
+        "fileNamePattern": "{resourceName}Dao.java",
+        "fileSubPath": ""
       },
       {
         "id": "96",
         "name": "rr-daoxml",
-        "description": "rr-daoxml"
+        "description": "rr-daoxml",
+        "fileNamePattern": "{resourceName}Dao.xml",
+        "fileSubPath": ""
       },
       {
         "id": "97",
         "name": "rr-service",
-        "description": "rr-service"
+        "description": "rr-service",
+        "fileNamePattern": "{resourceName}Service.java",
+        "fileSubPath": ""
       }
     ]
   },
 
   {
     "group": "jpa-starp",
-    "templates": [{
-      "id": "101",
-      "name": "starp-entity",
-      "description": "entity"
-    },
+    "templates": [
+      {
+        "id": "101",
+        "name": "starp-entity",
+        "description": "entity",
+        "fileNamePattern": "{resourceName}.java",
+        "fileSubPath": ""
+      },
       {
         "id": "102",
         "name": "starp-repository",
-        "description": "repository"
+        "description": "repository",
+        "fileNamePattern": "{resourceName}Repository.java",
+        "fileSubPath": ""
       },
       {
         "id": "103",
         "name": "starp-jpa-controller",
-        "description": "jpacontroller"
+        "description": "jpacontroller",
+        "fileNamePattern": "{resourceName}Controller.java",
+        "fileSubPath": ""
       }
     ]
   },
