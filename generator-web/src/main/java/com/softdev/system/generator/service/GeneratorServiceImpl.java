@@ -112,7 +112,7 @@ public class GeneratorServiceImpl implements GeneratorService {
             throws IOException {
         try (ZipOutputStream outputStream = new ZipOutputStream(out)) {
             for (ExportCodeFile exportCodeFile : exportCodeFiles) {
-                boolean shouldExport = isNotEmpty(exportCodeFile.getPath()) && isNotEmpty(exportCodeFile.getName());
+                boolean shouldExport = isNotEmpty(exportCodeFile.getName());
                 if (shouldExport) {
                     ZipEntry zipEntry = new ZipEntry(exportCodeFile.getPath()
                             + System.getProperty("file.separator") + exportCodeFile.getName());
